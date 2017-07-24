@@ -30,8 +30,8 @@ $ chmod u-w /usr/local/lib/tsung/bin/tsung_stats.pl # 書込権限削除
 # 負荷テスト実行
 
 ``` sh
-git clone https://github.com/kurebio/mac-tsung.git
-vi tsung.xml # テスト先サーバなどを指定
+$ git clone https://github.com/kurebio/mac-tsung.git
+$ vi tsung.xml # テスト先サーバなどを指定
 
 $ tsung -f ./tsung.xml -l log start # 負荷テスト実行
 Starting Tsung
