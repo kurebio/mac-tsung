@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE tsung SYSTEM "/usr/local/Cellar/tsung/1.6.0/share/tsung/tsung-1.0.dtd">
+<tsung loglevel="notice" version="1.0">
+
+<clients>
+<client host='localhost' maxusers="500" use_controller_vm="true"/>
+</clients>
+
+<servers>
+<server host="localhost" port="8000" type="tcp"/>
+</servers>
+
+<load>
+<arrivalphase phase="1" duration="120" unit="second">
+<users maxnumber="500" arrivalrate="100" unit="second"/>
+</arrivalphase>
+</load>
+
+<sessions>
+<session probability="100" name="http-test" type="ts_http">
+<for from="1" to="10000" incr="1" var="counter">
+<request> <http url="/test.json" method="GET" version="1.1"/> </request>
+</for>
+</session>
+</sessions>
+
+</tsung>
