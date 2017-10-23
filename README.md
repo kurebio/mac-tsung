@@ -1,6 +1,6 @@
 Macとtsungで手軽にHTTP負荷テスト
 
-[こちらの記事](http://qiita.com/kurebio/2eac819962f7886bae4a)用のリポジトリです｡
+[こちらの記事](https://qiita.com/kurebio/items/2eac819962f7886bae4a)用のリポジトリです｡
 
 # tsungインストール
 
